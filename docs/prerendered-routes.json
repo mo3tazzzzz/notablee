@@ -1,0 +1,8 @@
+{
+  "routes": {
+    "/notablee": {},
+    "/notablee/about": {},
+    "/notablee/home": {},
+    "/notablee/latest": {}
+  }
+}
