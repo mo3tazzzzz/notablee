@@ -1,0 +1,37 @@
+<div class="container mt-5 pad">
+  <div class="row mb-5">
+    <!-- الخبر الكبير -->
+    <div class="col-md-6">
+      <img src="/images/1.jpeg" class="img-fluid w-100" alt="Main Article">
+    </div>
+    <div class="col-md-6 d-flex flex-column justify-content-center">
+      <p class="text-uppercase text-muted mb-1 anim">Illustrations</p>
+      <h2 class="fw-bold">Japan House Opens in Mountainside to Foster Peak Creativity.</h2>
+      <p class="text-muted">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat justo in eros ultrices.
+      </p>
+      <p class="fw-bold mb-0 anim">By Risa Torphy</p>
+    </div>
+  </div>
+
+  <!-- باقي الأخبار -->
+  <div class="row g-4">
+    <div class="col-md-4" *ngFor="let article of articles">
+      <img [src]="article.image" class="img-fluid w-100" alt="Article Image">
+      <p class="text-uppercase text-muted mt-2 mb-1 anim">{{ article.category }}</p>
+      <h5 class="fw-bold">{{ article.title }}</h5>
+      <p class="fw-bold mb-0 anim">By {{ article.author }}</p>
+    </div>
+  </div>
+  <hr class="mt-5">
+</div>
+<app-latest-posts></app-latest-posts>
+<app-featured-posts></app-featured-posts>
+
+
+
+
+
+
+
+

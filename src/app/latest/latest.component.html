@@ -1,0 +1,19 @@
+<div class="container py-5">
+  <h1 class="text-uppercase mb-4 mt-5 pad">Latest Posts</h1>
+
+  <div class="row g-4">
+    <div class="col-md-4" *ngFor="let post of posts">
+      <img [src]="post.image" class="img-fluid">
+      <div class="text-uppercase text-secondary mt-2 anim" style="font-size: 12px;">
+        {{ post.category }}
+      </div>
+      <div class="fw-bold text-uppercase mt-1" style="font-size: 14px;">
+        {{ post.title }}
+      </div>
+      <div class="fw-bold anim" style="font-size: 12px;">
+        By {{ post.author }}
+      </div>
+    </div>
+  </div>
+  
+</div>

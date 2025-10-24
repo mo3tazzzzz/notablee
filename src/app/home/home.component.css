@@ -1,0 +1,18 @@
+h2, h5 {
+  line-height: 1.3;
+}
+
+.text-muted {
+  font-size: 0.9rem;
+}
+
+.anim:hover{
+  
+  
+  text-decoration: underline;
+}
+
+.pad
+{
+  padding-top: 100px;
+}

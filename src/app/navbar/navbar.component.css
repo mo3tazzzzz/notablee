@@ -1,0 +1,24 @@
+.nav-link {
+  position: relative;
+  padding-bottom: 10px; /* علشان يسيب مسافة للخط */
+  
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -17px;
+  width: 0;
+  height: 4px;
+  background-color: #000; /* لون الخط */
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+  
+
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
